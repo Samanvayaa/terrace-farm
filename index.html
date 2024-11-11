@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sikkim’s Terraced Farming Models</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar Styles */
+    nav {
+      background-color: #2d6a4f;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover, nav ul li a.active {
+      background-color: #1b4d3e;
+    }
+
+    /* Header Section */
+    header {
+      background-image: url("terrace.webp"); /* Replace with relevant image URL */
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+      text-shadow: 7px 6px 7px rgba(0, 0, 0, 1);
+      background-color: rgba(0, 0, 0, 0.5); /* Black overlay */
+      background-blend-mode: overlay;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3em;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 40px 20px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    section:nth-of-type(1) { animation-delay: 0.2s; }
+    section:nth-of-type(2) { animation-delay: 0.4s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
+    section:nth-of-type(4) { animation-delay: 0.8s; }
+    section:nth-of-type(5) { animation-delay: 1s; }
+
+    /* Animation */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Section Heading */
+    .section-heading {
+      font-size: 2em;
+      color: #2d6a4f;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 3px solid #2d6a4f;
+      display: inline-block;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.2em;
+      color: #444;
+      line-height: 1.8;
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+    }
+    .content>img{
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 30px;
+    }
+    .content>p{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Specific Section Styles */
+    #intro { background: #e8f5e9; }
+    #types { background: #f7fbf4; border-top: 5px solid #2d6a4f; border-bottom: 5px solid #2d6a4f; }
+    #benefits { background: #e3f2fd; }
+    #challenges { background: #fffde7; }
+    #future { background: #f1f8e9; }
+
+    /* Footer */
+    footer {
+      background-color: #2d6a4f;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#intro" class="nav-link">Introduction</a></li>
+      <li><a href="#types" class="nav-link">Types</a></li>
+      <li><a href="#benefits" class="nav-link">Benefits</a></li>
+      <li><a href="#challenges" class="nav-link">Challenges</a></li>
+      <li><a href="#future" class="nav-link">Future Prospects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Sikkim’s Terraced Farming Models</h1>
+    <p>Exploring the sustainable, scenic, and rich agricultural practice of terraced farming in Sikkim</p>
+  </header>
+
+  <!-- Sections with "coming up" animation -->
+  <section id="intro">
+    <h2 class="section-heading">Introduction</h2>
+    <div class="content">
+      <p>Terraced farming in Sikkim is a centuries-old practice used by local farmers to grow rice, maize, and millet on the slopes of hills. This agricultural method helps conserve soil and water, creating a sustainable farming model that is both effective and picturesque.</p>
+      <img src="intro.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="types">
+    <h2 class="section-heading">Types of Terraced Farming</h2>
+    <div class="content">
+      <p>In Sikkim, various terraced farming models are used to adapt to the region's terrain and climate. Common types include step terraces, contour terraces, and stone terraces, each suited to specific crops and environmental conditions.</p>
+      <img src="types.png" alt="">
+    </div>
+  </section>
+
+  <section id="benefits">
+    <h2 class="section-heading">Benefits of Terraced Farming</h2>
+    <div class="content">
+      <p>Terraced farming reduces soil erosion, enhances water retention, and boosts crop yields. It also helps maintain the biodiversity of Sikkim by preventing deforestation and promoting sustainable land use, making it essential for the region's economy and environment.</p>
+      <img src="benefits.webp" alt="">
+    </div>
+  </section>
+
+  <section id="challenges">
+    <h2 class="section-heading">Challenges of Terraced Farming</h2>
+    <div class="content">
+      <p>Despite its benefits, terraced farming in Sikkim faces challenges such as maintenance costs, labor-intensive practices, and vulnerability to landslides. Addressing these issues is crucial for the sustainable future of terraced farming in the region.</p>
+      <img src="challege.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="future">
+    <h2 class="section-heading">Future Prospects</h2>
+    <div class="content">
+      <p>The future of terraced farming in Sikkim lies in modern techniques, government support, and the involvement of the younger generation. With advancements in technology and sustainable practices, terraced farming has the potential to remain a vital part of Sikkim's agriculture.</p>
+      <img src="future.avif" alt="">
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Sikkim Terraced Farming. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
